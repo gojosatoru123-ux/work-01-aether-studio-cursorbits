@@ -64,7 +64,7 @@ function ParallaxText({ children, baseVelocity = 100 }: { children: string; base
     damping: 50,
     restDelta: 0.001
   });
-  
+
   const x = useTransform(scrollVelocity, [0, 1000], [0, baseVelocity]);
 
   return (
@@ -123,7 +123,7 @@ export default function About() {
                   transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
                   className="text-6xl md:text-[12vw] font-display font-bold tracking-tighter leading-[0.85] text-ink pb-4 md:pb-8"
                 >
-                  WE ARE <br /> 
+                  WE ARE <br />
                   <span className="serif italic font-light text-accent">Aether</span> STUDIO<span className="text-accent">.</span>
                 </motion.h1>
               </div>
@@ -158,7 +158,7 @@ export default function About() {
                   EST. 2018
                 </div>
               </motion.div>
-              
+
               <div className="md:col-span-5 space-y-12 md:space-y-16 pt-8 md:pt-48">
                 <div className="space-y-6 md:space-y-8">
                   <ScrollReveal>
@@ -179,7 +179,7 @@ export default function About() {
                     </ScrollReveal>
                   </div>
                 </div>
-                
+
                 <div className="pt-4 md:pt-8">
                   <Link to="/work" className="group flex items-center gap-4 md:gap-6">
                     <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border border-ink/10 flex items-center justify-center group-hover:bg-ink group-hover:border-ink transition-all duration-500">
@@ -196,11 +196,11 @@ export default function About() {
         {/* Philosophy Section - Artistic & Immersive */}
         <section className="py-24 md:py-48 bg-ink text-cream relative overflow-hidden">
           <FloatingElements count={8} className="opacity-20" />
-          <motion.div 
+          <motion.div
             style={{ rotate }}
             className="absolute top-[-10%] md:top-[-20%] right-[-10%] w-[80vw] md:w-[60vw] h-[80vw] md:h-[60vw] border border-accent/10 rounded-full pointer-events-none"
           />
-          
+
           <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
             <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
               <div className="space-y-8 md:space-y-12">
@@ -208,7 +208,7 @@ export default function About() {
                   <span className="text-accent text-[10px] tracking-[0.4em] uppercase font-bold block">Philosophy / 01</span>
                   <ScrollReveal>
                     <h2 className="text-5xl md:text-9xl font-display font-bold tracking-tighter leading-[0.85] pb-4 md:pb-8">
-                      ART <br /> 
+                      ART <br />
                       <span className="serif italic font-light text-accent">Meets</span> <br />
                       CODE<span className="text-accent">.</span>
                     </h2>
@@ -220,7 +220,7 @@ export default function About() {
                   </p>
                 </ScrollReveal>
               </div>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
                 {values.map((value, i) => (
                   <motion.div
@@ -351,7 +351,7 @@ export default function About() {
               CONNECT
             </h2>
           </div>
-          
+
           <div className="max-w-5xl mx-auto text-center relative z-10 space-y-12 md:space-y-16">
             <div className="space-y-4 md:space-y-6">
               <span className="text-accent text-[10px] tracking-[0.4em] uppercase font-bold block">Next Step / 04</span>
@@ -361,18 +361,18 @@ export default function About() {
                 </h2>
               </ScrollReveal>
             </div>
-            
+
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
               <ScrollReveal delay={0.4}>
                 <Link
                   to="/contact"
-                  className="group relative px-12 md:px-16 py-6 md:py-8 bg-cream text-ink rounded-full overflow-hidden transition-all duration-700"
-                >
-                  <span className="relative z-10 text-lg md:text-xl font-display font-bold tracking-tighter">START A PROJECT</span>
-                  <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-700" />
+                ><div className="group relative px-12 md:px-24 py-6 md:py-12 bg-cream text-ink rounded-full overflow-hidden transition-all duration-700 shadow-2xl">
+                    <span className="relative z-10 text-xl md:text-3xl font-display font-bold tracking-tighter">START A PROJECT</span>
+                    <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-700" />
+                  </div>
                 </Link>
               </ScrollReveal>
-              
+
               <ScrollReveal delay={0.6}>
                 <div className="text-center md:text-left space-y-1 md:space-y-2">
                   <p className="text-cream/40 text-[8px] md:text-[10px] uppercase tracking-widest font-bold">Direct Line</p>

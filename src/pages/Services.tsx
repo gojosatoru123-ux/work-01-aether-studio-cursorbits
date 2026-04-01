@@ -23,7 +23,7 @@ const services = [
     subtitle: 'Experience Engineering',
     description: 'We create intuitive and beautiful interfaces that provide seamless user journeys.',
     details: ['User Experience', 'User Interface', 'Prototyping', 'User Research', 'Design Systems'],
-    image: 'https://images.unsplash.com/photo-1586717791821-3f44a563dc4c?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://images.unsplash.com/photo-1618788372246-79faff0c3742?auto=format&fit=crop&q=80&w=1000',
   },
   {
     id: 'motion',

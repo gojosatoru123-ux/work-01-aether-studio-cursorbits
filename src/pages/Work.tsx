@@ -69,7 +69,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
 
 export default function Work() {
   const [activeCategory, setActiveCategory] = useState('All');
-  
+
   const filteredProjects = useMemo(() => {
     if (activeCategory === 'All') return projects;
     return projects.filter(p => p.category === activeCategory);
@@ -97,7 +97,7 @@ export default function Work() {
                 transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
                 className="text-6xl md:text-[12vw] font-display font-bold tracking-tighter leading-[0.85] text-ink pb-4"
               >
-                SELECTED <br /> 
+                SELECTED <br />
                 <span className="serif italic font-light text-accent">Artifacts</span>
               </motion.h1>
             </div>
@@ -121,8 +121,8 @@ export default function Work() {
                     onClick={() => setActiveCategory(category)}
                     className={cn(
                       "text-[10px] md:text-xs tracking-[0.3em] uppercase font-bold px-5 md:px-6 py-2.5 md:py-3 rounded-full border transition-all duration-500",
-                      activeCategory === category 
-                        ? "bg-ink text-cream border-ink" 
+                      activeCategory === category
+                        ? "bg-ink text-cream border-ink"
                         : "bg-transparent text-ink/40 border-ink/10 hover:border-accent hover:text-accent"
                     )}
                   >
@@ -133,7 +133,7 @@ export default function Work() {
             </div>
           </ScrollReveal>
 
-          <motion.div 
+          <motion.div
             className="grid grid-cols-12 gap-6 md:gap-12"
           >
             <AnimatePresence>
@@ -152,29 +152,29 @@ export default function Work() {
             FUTURE
           </h2>
         </div>
-        
+
         <div className="max-w-5xl mx-auto text-center space-y-12 md:space-y-16 relative z-10">
           <ScrollReveal>
             <div className="space-y-4 pb-4 md:pb-8">
               <span className="text-accent text-[10px] tracking-[0.4em] uppercase font-bold">Next Step / 03</span>
               <h2 className="text-5xl md:text-[10vw] font-display font-bold tracking-tighter leading-[0.85] pb-4">
-                READY TO <br /> 
+                READY TO <br />
                 <span className="serif italic font-light text-accent">Elevate?</span>
               </h2>
             </div>
           </ScrollReveal>
-          
+
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
             <ScrollReveal delay={0.2}>
               <Link
                 to="/contact"
-                className="group relative px-12 md:px-16 py-6 md:py-8 bg-cream text-ink rounded-full overflow-hidden transition-all duration-700"
-              >
-                <span className="relative z-10 text-lg md:text-xl font-display font-bold tracking-tighter">START A PROJECT</span>
-                <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-700" />
+              ><div className="group relative px-12 md:px-24 py-6 md:py-12 bg-cream text-ink rounded-full overflow-hidden transition-all duration-700 shadow-2xl">
+                  <span className="relative z-10 text-xl md:text-3xl font-display font-bold tracking-tighter">START A PROJECT</span>
+                  <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-700" />
+                </div>
               </Link>
             </ScrollReveal>
-            
+
             <ScrollReveal delay={0.4}>
               <div className="text-center md:text-left space-y-1 md:space-y-2">
                 <p className="text-cream/40 text-[8px] md:text-[10px] uppercase tracking-widest font-bold">Direct Line</p>

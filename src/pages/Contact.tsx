@@ -136,7 +136,7 @@ export default function Contact() {
                   
                   <h1 className="text-6xl md:text-[12vw] font-display font-bold tracking-tighter leading-[0.85] pb-4 md:pb-8">
                     <div className="overflow-hidden">
-                      {"LET'S CREATE".split('').map((char, i) => (
+                      {"LET'S BRING".split('').map((char, i) => (
                         <motion.span
                           key={i}
                           initial={{ y: "100%" }}

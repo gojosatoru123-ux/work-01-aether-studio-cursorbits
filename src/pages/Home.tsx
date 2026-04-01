@@ -146,7 +146,7 @@ export default function Home() {
                   className="flex items-center gap-4 md:gap-6"
                 >
                   <span className="w-12 md:w-16 h-px bg-accent" />
-                  <span className="text-accent text-[8px] md:text-[10px] tracking-[0.6em] uppercase font-bold">Award Winning Studio / 2026</span>
+                  <span className="text-accent text-[8px] md:text-[10px] tracking-[0.6em] uppercase font-bold">Design Studio / 2026</span>
                 </motion.div>
                 
                 <h1 className="text-[16vw] md:text-[12vw] font-display font-bold tracking-tighter leading-[0.85] text-ink">
